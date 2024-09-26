@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "esnext",
+    "target": "es2018",
+    "outDir": "dist",
+    "sourceMap": true,
+    "moduleResolution": "node",    
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
     "allowJs": true
   },
   "files": ["src/index.ts"]
