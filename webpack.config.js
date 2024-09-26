@@ -24,6 +24,7 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'index.html',
+            scriptLoading: "module"
         }),
 
         // Add your plugins here
