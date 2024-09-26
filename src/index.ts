@@ -1,2 +1,6 @@
 import "./components/app-component"
-console.log("Hello World!");
+import {loadAllToDos} from  "./feature/todo-service"
+
+console.log("Hello World!")
+
+loadAllToDos()
