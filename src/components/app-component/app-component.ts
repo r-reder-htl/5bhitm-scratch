@@ -11,7 +11,7 @@ class AppComponent extends HTMLElement {
     connectedCallback() {
         console.log("App component connected")
         store.subscribe(model => {
-            console.log("todos changed: ", model.todos)
+            console.log(`${model.greeting} todos changed: `, model.todos)
         })
         render(template, this)
     }
