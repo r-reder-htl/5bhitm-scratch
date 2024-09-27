@@ -1,5 +1,5 @@
 import {html, render} from "lit-html"
-import { setModel } from "../view-model"
+import { setRenderFnForModel } from "../view-model"
 
 const template = html`
     <div class="container">
@@ -27,7 +27,7 @@ export interface AllDetailTableViewModel {
 class AppComponent extends HTMLElement {
     connectedCallback() {
         
-        setModel((model) => {
+        setRenderFnForModel((model) => {
             render(getHTML(model), this)
         })
         render(template, this)

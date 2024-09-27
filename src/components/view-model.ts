@@ -24,7 +24,7 @@ export function toUserTodoTables(model: Model): AllDetailTableViewModel {
     }
 }
 
-export function setModel(renderFn: (item: any) => void){
+export function setRenderFnForModel(renderFn: (item: any) => void){
     store
         .pipe(map(toUserTodoTables))
         .subscribe(model => {
