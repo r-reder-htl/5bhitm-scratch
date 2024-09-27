@@ -2,21 +2,8 @@
 import {Model, store} from "../model/model"
 import {ToDo} from "../model/todo";
 import {map} from "rxjs";
+import { AllDetailTableViewModel } from "./app-component/app-component";
 
-export interface RowViewModel {
-    id: number
-    text: string
-}
-
-export interface TableViewModel {
-    header: string
-    rows: RowViewModel[]
-}
-
-export interface AllDetailTableViewModel {
-    allTodos: TableViewModel
-    tables: TableViewModel[]
-}
 
 export function toToDoModel(toDo: ToDo) {
     return {

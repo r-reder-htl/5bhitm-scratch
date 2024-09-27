@@ -1,11 +1,26 @@
 import {html, render} from "lit-html"
-import { AllDetailTableViewModel, setModel, TableViewModel } from "../view-model"
+import { setModel } from "../view-model"
 
 const template = html`
     <div class="container">
         Loading ...
     </div>
 `
+
+export interface RowViewModel {
+    id: number
+    text: string
+}
+
+export interface TableViewModel {
+    header: string
+    rows: RowViewModel[]
+}
+
+export interface AllDetailTableViewModel {
+    allTodos: TableViewModel
+    tables: TableViewModel[]
+}
 
 
 
